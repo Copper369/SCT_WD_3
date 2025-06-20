@@ -1,0 +1,60 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .mode-select {
+      margin-bottom: 15px;
+    }
+    .mode-select button {
+      padding: 8px 16px;
+      margin: 0 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .mode-select button.selected {
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+    #status {
+      margin-bottom: 15px;
+      font-weight: bold;
+      min-height: 24px;
+    }
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      grid-gap: 5px;
+      margin-bottom: 15px;
+    }
+    .cell {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border: 1px solid #ccc;
+      font-size: 2.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .cell:disabled {
+      cursor: default;
+      background: #eee;
+    }
+    button#resetBtn {
+      padding: 8px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
